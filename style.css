@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.main{
+    width: 100%;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.parts{
+    display: flex;
+    width: 800px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    color: white;
+}
+.part img{
+    height: 2rem;
+    width: 3rem;
+}
+.part h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+}
+.part p{
+    font-size: 15px;
+    color: hsla(0, 0%, 95%, 0.508);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+.part button{
+    
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+}
+.part button:hover{
+    color: whitesmoke;
+    background-color: black;
+    transition: all ease-in-out 0.4s;
+}
+.part_1{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+.part_2{
+    background-color: hsl(184, 100%, 22%);
+}
+.part_3{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.attribution { 
+    padding: 5px;
+    font-size: 15px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px){
+    .main{
+        height: 1500px;
+    }
+    .parts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 85%;
+    }
+    .part button{
+        padding: 12px;
+        width: 45%;
+    }
+}
